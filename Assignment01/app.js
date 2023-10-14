@@ -45,9 +45,11 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render("error");
 
-  app.listen(port, () => {
-    console.log(`Server is running in port number ${port}`);
-  })
+ 
 });
+
+app.listen(port, () => {
+  console.log(`Server is running in port number ${port}`);
+})
 
 module.exports = app;
